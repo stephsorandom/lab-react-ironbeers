@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Switch, Route} from 'react-router-dom'
+import Home from './Components/Home';
+import AllBeers from './Components/AllBeers';
+import RandomBeer from './Components/RandomBeer';
+import NewBeer from './Components/NewBeer';
+import NavBar from './Components/NavBar';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <NavBar />
+            <Switch>
+                <Route exact path="/" render={(props) => <Home {...props} />} />
+                <Route exact path="/all-beers" render={(props) => <AllBeers {...props} />} />
+                <Route exact path="/random-beer" render={(props) => <RandomBeer {...props} />} />
+                <Route exact path="/new-beer" render={(props) => <NewBeer {...props} />} />
+          </Switch>
     </div>
   );
 }
+
+// https://ih-beers-api2.herokuapp.com/beers
 
 export default App;
