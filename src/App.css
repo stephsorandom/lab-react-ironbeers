@@ -3,5 +3,7 @@
 }
 
 .NavBar {
-  background-color: blue;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-evenly;
 }

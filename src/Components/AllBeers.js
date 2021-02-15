@@ -9,3 +9,5 @@ function AllBeers(props) {
 }
 
 export default AllBeers;
+
+// https://ih-beers-api2.herokuapp.com/beers

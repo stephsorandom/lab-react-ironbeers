@@ -4,7 +4,11 @@ import {Link}  from 'react-router-dom';
 function NavBar(props) {
     return (
         <div class="NavBar">
-        <div class="home-roof-right" style={{backgroundColor: "#E5E9EA"}}></div>
+        
+            <Link to="/">Home</Link>
+            <Link to="/AllBeers">All Beers</Link>
+            <Link to="/RandomBeer">Random Beer</Link>
+            <Link to="/NewBeer">New Beer</Link>
             
         </div>
     );
