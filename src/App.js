@@ -12,10 +12,11 @@ function App(props) {
     <div className="App">
     <NavBar />
             <Switch>
+
                 <Route exact path="/" render={(props) => <Home {...props} />} />
-                <Route exact path="/all-beers" render={(props) => <AllBeers {...props} />} />
-                <Route exact path="/random-beer" render={(props) => <RandomBeer {...props} />} />
-                <Route exact path="/new-beer" render={(props) => <NewBeer {...props} />} />
+                <Route exact path="/AllBeers" render={(props) => <AllBeers {...props} />} />
+                <Route exact path="/RandomBeer" render={(props) => <RandomBeer {...props} />} />
+                <Route exact path="/NewBeer" render={(props) => <NewBeer {...props} />} />
           </Switch>
     </div>
   );

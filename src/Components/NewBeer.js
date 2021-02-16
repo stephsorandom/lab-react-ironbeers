@@ -1,11 +1,11 @@
-import React from 'react';
+// import React from 'react';
 
-function NewBeer(props) {
-    return (
-        <div>
+// function NewBeer(props) {
+//     return (
+//         <div>
             
-        </div>
-    );
-}
+//         </div>
+//     );
+// }
 
-export default NewBeer;
+// export default NewBeer;
