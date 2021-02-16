@@ -6,6 +6,7 @@ import AllBeers from './Components/AllBeers';
 import RandomBeer from './Components/RandomBeer';
 import NewBeer from './Components/NewBeer';
 import NavBar from './Components/NavBar';
+import SingleBeer from './Components/SingleBeer';
 
 function App(props) {
   return (
@@ -17,6 +18,7 @@ function App(props) {
                 <Route exact path="/AllBeers" render={(props) => <AllBeers {...props} />} />
                 <Route exact path="/RandomBeer" render={(props) => <RandomBeer {...props} />} />
                 <Route exact path="/NewBeer" render={(props) => <NewBeer {...props} />} />
+                <Route exact path="/allbeers/:id" render={(props) => <SingleBeer {...props} />} />
           </Switch>
     </div>
   );
